@@ -21,7 +21,7 @@ const onionTrack = [3, 3, 3, 4, 4, 5, 5, 5];
               (position === turnips)
               ? <div className="tracks__turnipSpot">
                   <p className="tracks__turnipCurrent">{price}</p>
-                  <img className="tracks__turnipIcon" src={turnipIcon}/>
+                  <img alt="turnip" className="tracks__turnipIcon" src={turnipIcon}/>
                 </div>
               : <p className="tracks__notCurrent">{price}</p>
             )
@@ -36,7 +36,7 @@ const onionTrack = [3, 3, 3, 4, 4, 5, 5, 5];
               (position === celery)
               ? <div className="tracks__celerySpot">
                   <p className="tracks__celeryCurrent">{price}</p>
-                  <img className="tracks__celeryIcon" src={celeryIcon}/>
+                  <img alt="celery" className="tracks__celeryIcon" src={celeryIcon}/>
                 </div>
               : <p className="tracks__notCurrent">{price}</p>
             )
@@ -51,7 +51,7 @@ const onionTrack = [3, 3, 3, 4, 4, 5, 5, 5];
               (position === onions)
               ? <div className="tracks__onionSpot">
                   <p className="tracks__onionCurrent">{price}</p>
-                  <img className="tracks__onionIcon" src={onionIcon}/>
+                  <img alt="onion" className="tracks__onionIcon" src={onionIcon}/>
                 </div>
               : <p className="tracks__notCurrent">{price}</p>
             )
