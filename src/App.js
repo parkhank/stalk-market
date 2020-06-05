@@ -71,22 +71,43 @@ componentDidUpdate(prevProps, prevState) {
 render() {
   return (
     <div className="app">
-      <h1 className="app__header">Stalk Market</h1>
+      <div className="app__header">
+        <h1 className="app__header--purple">S</h1>
+        <h1 className="app__header--green">T</h1>
+        <h1 className="app__header--yellow">A</h1>
+        <h1 className="app__header--purple">L</h1>
+        <h1 className="app__header--green">K</h1>
+        <h1 className="app__header--space"> </h1>
+        <h1 className="app__header--yellow">M</h1>
+        <h1 className="app__header--purple">A</h1>
+        <h1 className="app__header--green">R</h1>
+        <h1 className="app__header--yellow">K</h1>
+        <h1 className="app__header--purple">E</h1>
+        <h1 className="app__header--green">T</h1>
+      </div>
       <Tracks positions={this.state.positions}/>
-      <Buy
-        turnipPrice={turnipTrack[this.state.positions.turnips]}
-        celeryPrice={celeryTrack[this.state.positions.celery]}
-        onionPrice={onionTrack[this.state.positions.onions]}
-        spendHandler={this.spendHandler}
-        rollDiceHandler={this.rollDiceHandler}
-        fridgeHandler={this.fridgeHandler}
-        sellHandler={this.sellHandler}/>
-      <p>Fridge: {this.state.fridge.turnips} {this.state.fridge.celery} {this.state.fridge.onions}</p>
-      {
-        (this.state.round > 5)
-        ? <p>Final score: {this.state.money}</p>
-        : <p>Money left: {this.state.money}</p>
-      }
+      <div className="info">
+        <Buy className="info__left"
+          turnipPrice={turnipTrack[this.state.positions.turnips]}
+          celeryPrice={celeryTrack[this.state.positions.celery]}
+          onionPrice={onionTrack[this.state.positions.onions]}
+          spendHandler={this.spendHandler}
+          rollDiceHandler={this.rollDiceHandler}
+          fridgeHandler={this.fridgeHandler}
+          sellHandler={this.sellHandler}/>
+        <div className="info__right">
+          {
+            (this.state.round > 5 )
+          ? <div className="info__round">Game Over!</div>
+          : <div className="info__round">Round: {this.state.round}</div>
+          }
+          {
+            (this.state.round > 5)
+            ? <p className="info__score">Final score: {this.state.money}</p>
+            : <p className="info__score">Money left: {this.state.money}</p>
+          }
+        </div>
+      </div>
     </div>
   );
 }

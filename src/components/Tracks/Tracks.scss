@@ -5,10 +5,19 @@
   flex-direction: column;
   align-items: center;
   width: 90vw;
-  margin-top: 24px;
   &__subtitle {
-    font-size: 20px;
+    font-size: 40px;
     width: 15vw;
+    padding: 12px 24px 12px 32px;
+    &--purple {
+      color: #9950a6;
+    }
+    &--green {
+      color: #7ed68e;
+    }
+    &--yellow {
+      color: #f2e696;
+    }
   }
   &__turnipCurrent, &__celeryCurrent, &__onionCurrent, &__notCurrent {
     width: 5vw;
@@ -18,6 +27,8 @@
   &__turnipCurrent, &__celeryCurrent, &__onionCurrent {
     background-color: #7ed68e;
     border-radius: 20px;
+    color: black;
+    font-size: 24px;
   }
   &__turnipCurrent {
     background-color: #9950a6;
@@ -33,9 +44,10 @@
   &__turnipIcon, &__celeryIcon, &__onionIcon {
     position: absolute;
     width: 60px;
-    height: 60px;
-    bottom: 2px;
+    height: 70px;
+    bottom: 0px;
     opacity: 30%;
+    border-radius: 20px;
   }
   &__turnips, &__celery, &__onions {
     display: flex;
@@ -43,5 +55,9 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 12px;
+    background-color: #333232;
+    border-radius: 24px;
+    padding-right: 24px;
+    color: white;
   }
 }

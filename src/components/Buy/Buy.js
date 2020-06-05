@@ -78,28 +78,38 @@ componentDidUpdate(prevProps, prevState) {
 
 render() {
   return (
-    <>
-      <h2>Buy:</h2>
-      <form onSubmit={this.buttonHandler}>
-        <input
-          className="buy__turnipInput"
-          type="text"
-          value={this.state.turnipNum || ''} onChange={this.turnipChange}/>
-        <p>{this.state.turnipAmt}</p>
-        <input
-          className="buy__celeryInput"
-          type="text"
-          value={this.state.celeryNum || ''} onChange={this.celeryChange}/>
-        <p>{this.state.celeryAmt}</p>
-        <input
-          className="buy__onionInput"
-          type="text"
-          value={this.state.onionNum || ''} onChange={this.onionChange}/>
-        <p>{this.state.onionAmt}</p>
-        <p>{this.state.totalAmt}</p>
-        <button className="buy__button">BUY</button>
+    <div className="buy">
+      <form className="buy__form" onSubmit={this.buttonHandler}>
+        <div className="buy__left">
+          <h2 className="buy__header">Buy:</h2>
+          <div className="buy__input">
+            <input
+              className="buy__turnipInput"
+              type="text"
+              value={this.state.turnipNum || ''} onChange={this.turnipChange}/>
+            <p className="buy__turnipOutput">{this.state.turnipAmt}</p>
+          </div>
+          <div className="buy__input">
+            <input
+              className="buy__celeryInput"
+              type="text"
+              value={this.state.celeryNum || ''} onChange={this.celeryChange}/>
+            <p className="buy__celeryOutput">{this.state.celeryAmt}</p>
+          </div>
+          <div className="buy__input">
+            <input
+              className="buy__onionInput"
+              type="text"
+              value={this.state.onionNum || ''} onChange={this.onionChange}/>
+            <p className="buy__onionOutput">{this.state.onionAmt}</p>
+          </div>
+        </div>
+        <div className="buy__right">
+          <p className="buy__total">{this.state.totalAmt}</p>
+          <button className="buy__button">Stalk Up!</button>
+        </div>
       </form>
-    </>
+    </div>
   )
 }
 

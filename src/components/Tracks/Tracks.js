@@ -14,7 +14,7 @@ const onionTrack = [3, 3, 3, 4, 4, 5, 5, 5];
   return (
     <div className="tracks">
       <div className="tracks__turnips">
-        <h2 className="tracks__subtitle">Turnips</h2>
+        <h2 className="tracks__subtitle tracks__subtitle--purple">Turnips</h2>
         {
           turnipTrack.map((price, position) => {
             return (
@@ -29,7 +29,7 @@ const onionTrack = [3, 3, 3, 4, 4, 5, 5, 5];
         }
       </div>
       <div className="tracks__celery">
-        <h2 className="tracks__subtitle">Celery</h2>
+        <h2 className="tracks__subtitle tracks__subtitle--green">Celery</h2>
         {
           celeryTrack.map((price, position) => {
             return (
@@ -44,7 +44,7 @@ const onionTrack = [3, 3, 3, 4, 4, 5, 5, 5];
         }
       </div>
       <div className="tracks__onions">
-        <h2 className="tracks__subtitle">Onions</h2>
+        <h2 className="tracks__subtitle tracks__subtitle--yellow">Onions</h2>
         {
           onionTrack.map((price, position) => {
             return (

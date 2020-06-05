@@ -1,9 +1,75 @@
 .buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  &__header {
+    font-size: 40px;
+    color: white;
+    padding: 12px 80px;
+    background-color: #333232;
+    border-radius: 12px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+  }
+  &__total {
+    font-size: 40px;
+    color: white;
+    align-self: center;
+    background-color: #333232;
+    border-radius: 24px;
+    padding: 18px 30px;
+    margin-bottom: 40px;
+  }
+  &__input {
+    display: flex;
+    align-items: baseline;
+  }
   &__turnipInput, &__celeryInput, &__onionInput {
-    border: 1px solid black;
+    border-radius: 12px;
+    width: 80px;
+    background-color: #333232;
+    padding: 8px;
+    margin: 8px;
+    margin-left: 24px;
+  }
+  &__turnipInput, &__turnipOutput {
+    color: #9950a6;
+    font-family: 'lobster';
+    font-size: 24px;
+  }
+  &__celeryInput, &__celeryOutput {
+    color: #7ed68e;
+    font-family: 'lobster';
+    font-size: 24px;
+  }
+  &__onionInput, &__onionOutput {
+    color: #f2e696;
+    font-family: 'lobster';
+    font-size: 24px;
+  }
+  &__turnipOutput, &__celeryOutput, &__onionOutput {
+    background-color: #333232;
+    border-radius: 12px;
+    width: 80px;
+    padding: 8px;
+    margin: 8px;
   }
   &__button {
-    border: 1px solid black;
     padding: 8px;
+    background-color: #e05e5e;
+    color: white;
+    font-family: 'lobster';
+    font-size: 40px;
+    width: 200px;
+    align-self: center;
   }
 }
+
