@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,97 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+a {
+  color: white;
+}
+
+.app {
+  font-family: 'lobster';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #524f4f;
+  height: 100vh;
+  &__top {
+    display: flex;
+    // align-items: center;
+  }
+  &__github, &__linkedin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    font-size: 24px;
+    align-items: center;
+  }
+  &__githubIcon, &__linkedinIcon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+  &__header {
+    display: flex;
+    margin: 30px 40px 30px 40px;
+    padding: 24px 48px 24px 48px;
+    background-color: #333232;
+    border-radius: 20px;
+    &--purple, &--green, &--yellow {
+      font-size: 80px;
+      padding-right: 8px;
+    }
+    &--purple {
+      color: #9950a6;
+      // color: #e05e5e;
+    }
+    &--green {
+      color: #7ed68e;
+      // color: #e05e5e;
+    }
+    &--yellow {
+      color: #f2e696;
+      // color: #e05e5e;
+    }
+    &--space {
+      width: 40px;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  width: 100vw;
+  &__left {
+    width: 50%;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  &__round {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 40px;
+    background-color: #333232;
+    border-radius: 24px;
+    margin: 24px;
+    color: white;
+    padding: 8px 24px 12px 24px;
+  }
+  &__score {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 80px;
+    background-color: #333232;
+    border-radius: 24px;
+    margin: 0px 24px;
+    color: white;
+    padding: 8px 24px 12px 24px;
+  }
 }
