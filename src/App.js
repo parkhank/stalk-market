@@ -2,7 +2,8 @@ import React from 'react';
 import './App.scss';
 import Tracks from './components/Tracks';
 import Buy from './components/Buy';
-// import Score from './components/Score';
+import github from './assets/github.svg';
+import linkedin from './assets/linkedin.png';
 
 const turnipTrack = [1, 2, 3, 4, 5, 6, 8, 10];
 const celeryTrack = [2, 3, 3, 4, 5, 5, 6, 7];
@@ -71,19 +72,31 @@ componentDidUpdate(prevProps, prevState) {
 render() {
   return (
     <div className="app">
-      <div className="app__header">
-        <h1 className="app__header--purple">S</h1>
-        <h1 className="app__header--green">T</h1>
-        <h1 className="app__header--yellow">A</h1>
-        <h1 className="app__header--purple">L</h1>
-        <h1 className="app__header--green">K</h1>
-        <h1 className="app__header--space"> </h1>
-        <h1 className="app__header--yellow">M</h1>
-        <h1 className="app__header--purple">A</h1>
-        <h1 className="app__header--green">R</h1>
-        <h1 className="app__header--yellow">K</h1>
-        <h1 className="app__header--purple">E</h1>
-        <h1 className="app__header--green">T</h1>
+      <div className="app__top">
+        <div className="app__github">
+          <img className="app__githubIcon" src={github}/>
+          <a href="https://github.com/parkhank">Hank</a>
+          <a href="https://github.com/zdsd0019">Kumail</a>
+        </div>
+        <div className="app__header">
+          <h1 className="app__header--purple">S</h1>
+          <h1 className="app__header--green">T</h1>
+          <h1 className="app__header--yellow">A</h1>
+          <h1 className="app__header--purple">L</h1>
+          <h1 className="app__header--green">K</h1>
+          <h1 className="app__header--space"> </h1>
+          <h1 className="app__header--yellow">M</h1>
+          <h1 className="app__header--purple">A</h1>
+          <h1 className="app__header--green">R</h1>
+          <h1 className="app__header--yellow">K</h1>
+          <h1 className="app__header--purple">E</h1>
+          <h1 className="app__header--green">T</h1>
+        </div>
+        <div className="app__linkedin">
+          <img className="app__linkedinIcon" src={linkedin} />
+          <a href="https://www.linkedin.com/in/parkhank/">Hank</a>
+          <a href="https://www.linkedin.com/in/syed-kumail-ali-zaidi/">Kumail</a>
+        </div>
       </div>
       <Tracks positions={this.state.positions}/>
       <div className="info">

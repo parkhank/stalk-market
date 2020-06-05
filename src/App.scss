@@ -13,6 +13,9 @@
     outline: none;
   }
 }
+a {
+  color: white;
+}
 
 .app {
   font-family: 'lobster';
@@ -21,6 +24,23 @@
   align-items: center;
   background-color: #524f4f;
   height: 100vh;
+  &__top {
+    display: flex;
+    // align-items: center;
+  }
+  &__github, &__linkedin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    font-size: 24px;
+    align-items: center;
+  }
+  &__githubIcon, &__linkedinIcon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
   &__header {
     display: flex;
     margin: 30px 40px 30px 40px;
