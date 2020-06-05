@@ -1,0 +1,9 @@
+.buy {
+  &__turnipInput, &__celeryInput, &__onionInput {
+    border: 1px solid black;
+  }
+  &__button {
+    border: 1px solid black;
+    padding: 8px;
+  }
+}
