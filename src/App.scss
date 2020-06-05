@@ -8,3 +8,13 @@
   list-style: none;
   text-decoration: none;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__header {
+    font-size: 40px;
+    margin-top: 24px;
+  }
+}
